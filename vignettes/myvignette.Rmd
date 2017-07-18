@@ -1,0 +1,17 @@
+---
+title: "Vignette Title"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+This package is for analysis of Vitamin D Data.
+
+Here is, e.g., a plot of the serum level as a function of intake that was constructed using the vitD.rda data table.
+
+```{r a_plot}
+vitD %>% ggplot(aes(IOMIntake, IOMLevel))+geom_point()
+```
