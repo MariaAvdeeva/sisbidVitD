@@ -25,4 +25,7 @@ Here is, e.g., a plot of the serum level as a function of intake that was constr
 
 ```{r a_plot}
 vitD %>% ggplot(aes(TotalIntake, AchievedLevel))+geom_point()
+#I kept the alternate version of the plot instead of this master one:
+#vitD %>% ggplot(aes(IOMIntake, IOMLevel))+geom_point()
+#The difference between these two plots looks insignificant.
 ```
